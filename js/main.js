@@ -102,6 +102,11 @@
        return false;
    }
    //not to accept without upper characters
+        var first=pass.substr(0,1);
+   if(!(first.match(/[A-Z]/))){
+     alert("*first letter should be upper case*");
+     return false;
+   }
  
    // not to accept without lower characters
   if(pass.search(/[a-z]/)==-1){
