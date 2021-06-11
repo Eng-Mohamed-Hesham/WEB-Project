@@ -93,11 +93,7 @@ function validation(){
       return false;
   }
     
-  //not to accept without upper characters
-  if(pass.search(/[A-Z]/)==-1){
-alert("**must include at leasrt 1 upper character**");
-      return false;
-  }
+ 
     
   // not to accept without lower characters
  if(pass.search(/[a-z]/)==-1){
