@@ -119,11 +119,6 @@
           alert("*must include 1 special character*");
        return false;
       }
-      
-   if(pass.charAt(0)!==pass.charAt(0).toUpperCase()){
-        alert("**must start with an uppercase character**");
-        return false;
-      }
    
    if(conpass != pass){
        alert("**passward is not matching");
