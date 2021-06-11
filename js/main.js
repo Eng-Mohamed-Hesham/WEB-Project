@@ -93,7 +93,11 @@ function validation(){
       return false;
   }
     
- 
+  //not to accept without upper characters
+  if(pass.search(/[A-Z]/)==-1){
+alert("**must include at leasrt 1 upper character**");
+      return false;
+  }
     
   // not to accept without lower characters
  if(pass.search(/[a-z]/)==-1){
@@ -107,10 +111,6 @@ function validation(){
       return false;
      }
     
-   if(pass.charAt(0)!==pass.charAt(0).toUpperCase()){
-    alert(**must start with an uppercase character);
-    return false;
-  }
   
   if(conpass != pass){
       alert("**passward isnot matches");
