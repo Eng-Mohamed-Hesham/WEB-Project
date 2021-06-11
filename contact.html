@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
 
+    <script src="js/main.js"></script>
+
+
 </head>
 
 <body id="home">
@@ -29,7 +32,7 @@
   
   <div class="container">
           
-    <form id="myform" action="index.html" method="post" onsubmit="return validation()" autocomplete="on" >
+    <form return id="myform" action="index.html" method="post" onsubmit="return validation()">
 
 
       <div class="inputBox">
@@ -40,25 +43,15 @@
           <input  name="password"type="password" id ="pass" class="control" placeholder="password" required>
           <input name="passward" type="password" placeholder="confirm passward" id="conpass" class="control" >
       </div>
-
-  
-          
-     
-     
-
       <textarea placeholder="Your order.." name="address" id="" cols="30" rows="10" required></textarea>
-      
           <input type="radio" id="male" name="gender" value="male" required>
           <label for="male">Male</label><br>
           <input type="radio" id="female" name="gender" value="female" required>
           <label for="female">Female</label><br>
-      
-
       <input type="submit" value="order now" class="btn" id="submit" >
-
-        </form>
+      </form>
     </div>
-  <script src="js/main.js"></script>
+  
 
   <footer class="text-center py-1 bg-dark">
     <p>Copyright &copy; 2020, The GYM, All Rights Reserved</p>
